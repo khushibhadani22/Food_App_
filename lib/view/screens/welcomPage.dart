@@ -6,6 +6,7 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -49,7 +50,7 @@ class WelcomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 130, vertical: 15)),
                   onPressed: () {
-                    Navigator.of(context).pushNamed('/homePage');
+                    Navigator.of(context).pushNamed('/signIn');
                   },
                   child: const Text(
                     "Let's Explore",
