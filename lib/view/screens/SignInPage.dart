@@ -97,13 +97,14 @@ class _SignInPageState extends State<SignInPage> {
                         textInputAction: TextInputAction.done,
                         obscureText: true,
                         decoration: const InputDecoration(
-                            border: OutlineInputBorder(),
-                            hintStyle: TextStyle(color: Colors.grey),
-                            hintText: "*********",
-                            prefixIcon: Icon(
-                              Icons.lock_outline,
-                              color: Color(0xff05B025),
-                            )),
+                          border: OutlineInputBorder(),
+                          hintStyle: TextStyle(color: Colors.grey),
+                          hintText: "*********",
+                          prefixIcon: Icon(
+                            Icons.lock_outline,
+                            color: Color(0xff05B025),
+                          ),
+                        ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -275,7 +276,7 @@ class _SignInPageState extends State<SignInPage> {
                               backgroundColor: Colors.white,
                               child: Icon(
                                 Icons.person,
-                                color: Color(0xff05B025),
+                                // color: Color(0xff05B025),
                                 size: 40,
                               ),
                             ),
