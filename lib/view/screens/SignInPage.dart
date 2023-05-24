@@ -276,7 +276,7 @@ class _SignInPageState extends State<SignInPage> {
                               backgroundColor: Colors.white,
                               child: Icon(
                                 Icons.person,
-                                // color: Color(0xff05B025),
+                                color: Color(0xff05B025),
                                 size: 40,
                               ),
                             ),
