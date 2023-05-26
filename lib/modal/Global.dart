@@ -648,7 +648,7 @@ class Global {
       'name': 'lebanese Sizzler',
       'detail': '',
       'image':
-          'https://cdn.tarladalal.com/members/9306/big/big_lebanese_sizzler-7472.jpg',
+          'https://5.imimg.com/data5/XR/TR/GLADMIN-9151659/lebanese-sizzler-500x500.jpg',
       'price': 180,
       'rating': 4.7,
       'time': '22 minutes',
