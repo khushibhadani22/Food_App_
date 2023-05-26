@@ -1,5 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/view/screens/CartPage.dart';
+import 'package:food_app/view/screens/DetailPage.dart';
+import 'package:food_app/view/screens/FavPage.dart';
 import 'package:food_app/view/screens/SignInPage.dart';
 import 'package:food_app/view/screens/SignUpPage.dart';
 import 'package:food_app/view/screens/homePage.dart';
@@ -28,6 +31,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/signIn', page: () => const SignInPage()),
         GetPage(name: '/signUp', page: () => const SignUpPage()),
         GetPage(name: '/HomePage', page: () => const HomePage()),
+        GetPage(name: '/DetailPage', page: () => const DetailFood()),
+        GetPage(name: '/favPage', page: () => const FAV()),
+        GetPage(name: '/cartPage', page: () => const CartPage()),
       ],
     );
   }

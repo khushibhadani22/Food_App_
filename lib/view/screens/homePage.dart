@@ -1,7 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../controller/custompaint.dart';
+import 'package:food_app/view/screens/CartPage.dart';
+import 'package:food_app/view/screens/FavPage.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import '../../modal/Global.dart';
+import 'DetailPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -157,16 +161,22 @@ class _HomePageState extends State<HomePage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
                                     children: [
-                                      Container(
-                                        height: 70,
-                                        width: 70,
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                                image:
-                                                    NetworkImage(e['image1'])),
-                                            borderRadius:
-                                                BorderRadius.circular(5),
-                                            color: Colors.white),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Get.toNamed('/DetailPage',
+                                              arguments: e['list']);
+                                        },
+                                        child: Container(
+                                          height: 70,
+                                          width: 70,
+                                          decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      e['image1'])),
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              color: Colors.white),
+                                        ),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -187,20 +197,96 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Expanded(
-            flex: 5,
-            child: SizedBox(
-              height: double.infinity,
-              width: double.infinity,
-              // color: Colors.black
-              child: GridView.builder(
-                  itemCount: 6,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
-                  itemBuilder: (cnt, i) {
-                    return const Text("khushi");
-                  }),
-            ),
-          ),
+              flex: 5,
+              child: Stack(
+                alignment: Alignment.topCenter,
+                children: [
+                  SizedBox(
+                    height: double.infinity,
+                    width: double.infinity,
+                    child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2),
+                      itemBuilder: (context, i) {
+                        return Card(
+                          elevation: 2,
+                          child: GestureDetector(
+                            onTap: () {
+                              Get.toNamed('/DetailPage',
+                                  arguments: Global.category[i]['list']);
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.all(5),
+                              margin: const EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 40,
+                                        foregroundImage: NetworkImage(
+                                            "${Global.category[i]['image']}"),
+                                      ),
+                                      const SizedBox(
+                                        width: 45,
+                                      ),
+                                      IconButton(
+                                          onPressed: () {
+                                            Get.to(const FAV());
+                                          },
+                                          icon: const Icon(
+                                            CupertinoIcons.heart,
+                                          ))
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("${Global.category[i]['name']}"),
+                                      Text("₹ ${Global.category[i]['price']}"),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("${Global.category[i]['time']}"),
+                                      Text("${Global.category[i]['rating']} ⭐"),
+                                    ],
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Get.to(const CartPage());
+                                    },
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                          color: Color(0xff05B025),
+                                          shape: BoxShape.circle),
+                                      height: 40,
+                                      width: 50,
+                                      child: const Icon(
+                                        Icons.add,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                      itemCount: Global.category.length,
+                    ),
+                  ),
+                ],
+              )),
         ],
       ),
     );

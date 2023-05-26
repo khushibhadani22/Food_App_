@@ -4,6 +4,12 @@ class Global {
   static List category = [
     {
       'food': 'South I',
+      'name': 'dosa',
+      'price': 100,
+      'time': '22 min',
+      'image':
+          'https://imgmedia.lbb.in/media/2022/03/6229b505adf00927e3a5f4b1_1646900485918.jpg',
+      'rating': 4.5,
       'index': 0,
       'list': south,
       'image1':
@@ -14,6 +20,12 @@ class Global {
       'index': 1,
       'list': chinese,
       'image1': 'https://cdn-icons-png.flaticon.com/512/3447/3447852.png',
+      'name': 'manchu soup',
+      'price': 150,
+      'time': '22 min',
+      'rating': 4.2,
+      'image':
+          'https://www.chefkunalkapur.com/wp-content/uploads/2021/03/Veg-Manchow-Soup-scaled.jpeg?v=1621618246',
     },
     {
       'food': 'Punjabi',
@@ -21,12 +33,24 @@ class Global {
       'list': punjabi,
       'image1':
           'https://cdn.iconscout.com/icon/free/png-256/free-punjabi-food-1851623-1569348.png',
+      'name': 'rajma chawal',
+      'price': 250,
+      'time': '22 min',
+      'rating': 4.3,
+      'image':
+          'https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg',
     },
     {
       'food': 'Pizza',
       'index': 3,
       'list': pizza,
       'image1': 'https://cdn-icons-png.flaticon.com/512/7183/7183811.png',
+      'name': 'Margherita',
+      'price': 400,
+      'time': '22 min',
+      'rating': 4.5,
+      'image':
+          'https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800',
     },
     {
       'food': 'Mexican',
@@ -34,7 +58,12 @@ class Global {
       'list': mexican,
       'image1':
           'https://icon-library.com/images/2018/6429618_taco-icon-taco-hd-png-download.png',
-      // 'https://cdn.iconscout.com/icon/premium/png-256-thumb/mexican-food-2-874120.png',
+      'name': 'tacos',
+      'price': 170,
+      'time': '22 min',
+      'rating': 4.5,
+      'image':
+          'https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Pork-carnitas-b94893e.jpg?quality=90&resize=556,505',
     },
     {
       'food': 'Burger',
@@ -42,6 +71,12 @@ class Global {
       'list': burger,
       'image1':
           'https://i.pinimg.com/originals/09/64/92/096492ba4261235a10b6826d93bb0dc2.png',
+      'name': 'Spicy Paneer',
+      'price': 250,
+      'time': '22 min',
+      'rating': 4.5,
+      'image':
+          'https://mcdonaldsblog.in/wp-content/uploads/2016/06/mcspicy-paneer-1-1.jpg',
     },
     {
       'food': 'Sizzler',
@@ -49,6 +84,12 @@ class Global {
       'list': sizzler,
       'image1':
           'https://static.vecteezy.com/system/resources/previews/010/621/205/non_2x/samosa-line-icon-vector.jpg',
+      'name': 'Italian Sizzler',
+      'price': 300,
+      'time': '22 min',
+      'rating': 4.4,
+      'image':
+          'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/umar/Italian_Pasta_Sizzler.jpg',
     },
   ];
   static List newSouth = [
