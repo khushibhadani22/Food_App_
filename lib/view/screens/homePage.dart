@@ -235,13 +235,13 @@ class _HomePageState extends State<HomePage> {
                                       const SizedBox(
                                         width: 45,
                                       ),
-                                      IconButton(
-                                          onPressed: () {
-                                            Get.to(const FAV());
-                                          },
-                                          icon: const Icon(
-                                            CupertinoIcons.heart,
-                                          ))
+                                      // IconButton(
+                                      // onPressed: () {
+                                      //   Get.to(const FAV());
+                                      // },
+                                      // icon: const Icon(
+                                      //   CupertinoIcons.heart,
+                                      // ))
                                     ],
                                   ),
                                   Row(

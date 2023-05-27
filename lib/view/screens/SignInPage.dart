@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../helper/firebaseAuthHelper.dart';
 
@@ -133,16 +134,20 @@ class _SignInPageState extends State<SignInPage> {
                                   .signIn(email: email!, password: password!);
 
                               if (res['user'] != null) {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Login In Successful....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar('login', 'Login Successful.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
+
                                 Navigator.of(context).pushReplacementNamed(
                                   '/HomePage',
                                 );
                               } else if (res['error'] != null) {
+                                Get.snackbar(
+                                    'error', 'error :- ${res['error']}....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(SnackBar(
                                   content: Text(res['error']),
@@ -150,12 +155,10 @@ class _SignInPageState extends State<SignInPage> {
                                   backgroundColor: const Color(0xff05B025),
                                 ));
                               } else {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Login In Failed....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar('Login', 'Login Failed.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                               }
                             }
                             setState(() {
@@ -203,31 +206,33 @@ class _SignInPageState extends State<SignInPage> {
                                   .authHelper
                                   .signInWithGoogle();
                               if (res['user'] != null) {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content:
-                                      Text("Login Successful With Google....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar('login',
+                                    'Login Successful With Google.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
+
                                 Navigator.of(context).pushReplacementNamed(
                                   '/HomePage',
                                 );
                               } else if (res['error'] != null) {
+                                Get.snackbar(
+                                    'error', 'error :- ${res['error']}....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(SnackBar(
                                   content: Text(res['error']),
                                   behavior: SnackBarBehavior.floating,
-                                  backgroundColor: const Color(0xff05B025),
-                                ));
-                              } else {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content:
-                                      Text("Login Failed With Google....."),
-                                  behavior: SnackBarBehavior.floating,
                                   backgroundColor: Color(0xff05B025),
                                 ));
+                              } else {
+                                Get.snackbar(
+                                    'Login', 'Login Failed With Google.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                               }
                             },
                             child: CircleAvatar(
@@ -245,17 +250,21 @@ class _SignInPageState extends State<SignInPage> {
                                   .logInWithAnonymously();
 
                               if (res['user'] != null) {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content:
-                                      Text("Login Successful As Guest....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar(
+                                    'login', 'Login Successful As Guest.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
+
                                 Navigator.of(context).pushReplacementNamed(
                                   '/HomePage',
                                 );
                               } else if (res['error'] != null) {
+                                Get.snackbar(
+                                    'error', 'error :- ${res['error']}....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(SnackBar(
                                   content: Text(res['error']),
@@ -263,12 +272,11 @@ class _SignInPageState extends State<SignInPage> {
                                   backgroundColor: Color(0xff05B025),
                                 ));
                               } else {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Login Failed As Guest....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar(
+                                    'Login', 'Login Failed As Guest.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                               }
                             },
                             child: const CircleAvatar(

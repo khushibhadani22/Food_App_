@@ -1,3 +1,5 @@
+import 'package:get/get_rx/src/rx_types/rx_types.dart';
+
 class FoodProduct {
   final String name;
   final String detail;
@@ -5,6 +7,7 @@ class FoodProduct {
   final int price;
   final double rating;
   final String time;
+  RxInt quantity = 1.obs;
 
   FoodProduct({
     required this.name,

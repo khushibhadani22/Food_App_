@@ -459,7 +459,7 @@ class Global {
       'time': '22 minutes',
     },
     {
-      'name': 'Sweet Potato Black Bean Enchiladas',
+      'name': 'Sweet Potato Black Bean',
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2021/09/Sweet-Potato-Enchiladas-010.jpg',
@@ -477,7 +477,7 @@ class Global {
       'time': '22 minutes',
     },
     {
-      'name': 'Butternut Squash Chipotle Chili with Avocado',
+      'name': 'Butternut Squash Chili',
       'detail': '',
       'image':
           'https://cookieandkate.com/images/2012/09/butternut-squash-chipotle-chili-recipe-0-1-550x822.jpg',
@@ -552,7 +552,7 @@ class Global {
       'time': '22 minutes',
     },
     {
-      'name': 'Cheese Lava American Burger',
+      'name': 'Cheese Lava American',
       'detail':
           'Roasted chipotle sauce ,onion , jalapenos ,salad mix ,Cheesy veg patty',
       'image':

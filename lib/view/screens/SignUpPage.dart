@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../helper/firebaseAuthHelper.dart';
 
@@ -162,28 +164,32 @@ class _SignUpPageState extends State<SignUpPage> {
                                       password: password!);
 
                               if (res['user'] != null) {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Sign Up Successful....."),
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: Color(0xff05B025),
-                                ));
+                                Get.snackbar(
+                                    'Sign Up', 'Sign Up Successful.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
+
+                                Navigator.of(context).pushReplacementNamed(
+                                  '/HomePage',
+                                );
                               } else if (res['error'] != null) {
+                                Get.snackbar(
+                                    'error', 'error :- ${res['error']}....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(SnackBar(
                                   content: Text(res['error']),
                                   behavior: SnackBarBehavior.floating,
-                                  backgroundColor: const Color(0xff05B025),
-                                ));
-                              } else {
-                                Navigator.of(context).pop();
-
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Sign Up Failed....."),
-                                  behavior: SnackBarBehavior.floating,
                                   backgroundColor: Color(0xff05B025),
                                 ));
+                              } else {
+                                Get.snackbar('Sign Up', 'Sign Up Failed.....',
+                                    snackPosition: SnackPosition.BOTTOM,
+                                    colorText: Colors.white,
+                                    backgroundColor: const Color(0xff05B025));
                               }
                               Navigator.of(context).pop();
                             }
