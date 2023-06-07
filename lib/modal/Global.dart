@@ -56,8 +56,7 @@ class Global {
       'food': 'Mexican',
       'index': 4,
       'list': mexican,
-      'image1':
-          'https://icon-library.com/images/2018/6429618_taco-icon-taco-hd-png-download.png',
+      'image1': 'https://cdn-icons-png.flaticon.com/512/74/74561.png',
       'name': 'tacos',
       'price': 170,
       'time': '22 min',
@@ -124,7 +123,7 @@ class Global {
       'detail': 'Vada , Sambhar , Coconut Chutney',
       'image':
           'https://im.rediff.com/travel-living/2015/apr/144302c33c547d28928409d18e3cf130093b56e8.jpg',
-      'price': 50,
+      'price': 40,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -179,7 +178,7 @@ class Global {
       'name': 'haka noodles',
       'detail': 'Noddles , Vegetable , Spicy Sauce',
       'image': 'https://static.toiimg.com/photo/75356205.cms',
-      'price': 120,
+      'price': 180,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -188,7 +187,7 @@ class Global {
       'detail': 'Fried Noodles , Vegetable , Spicy Sauce',
       'image':
           'https://img-global.cpcdn.com/recipes/3b9c6d673a81d0e8/1200x630cq70/photo.jpg',
-      'price': 120,
+      'price': 100,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -197,7 +196,7 @@ class Global {
       'detail': 'Vegetable , Onion , Garlic , fried noodles , spicy sauce',
       'image':
           'https://www.chefkunalkapur.com/wp-content/uploads/2021/03/Veg-Manchow-Soup-scaled.jpeg?v=1621618246',
-      'price': 120,
+      'price': 50,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -206,7 +205,7 @@ class Global {
       'detail': 'vegetable , noodles , spicy sauce',
       'image':
           'https://redhousespice.com/wp-content/uploads/2021/12/whole-spring-rolls-and-halved-ones-scaled.jpg',
-      'price': 120,
+      'price': 220,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -215,7 +214,7 @@ class Global {
       'detail': 'Vegetable , Cheese , Garlic Sauce',
       'image':
           'https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg',
-      'price': 120,
+      'price': 100,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -224,7 +223,7 @@ class Global {
       'detail': 'Pasta , Vegetable , Spicy Sauce',
       'image':
           'https://vismaifood.com/storage/app/uploads/public/7b2/49e/d12/thumb__700_0_0_0_auto.jpg',
-      'price': 120,
+      'price': 140,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -240,7 +239,7 @@ class Global {
       .toList();
   static List newPunjabi = [
     {
-      'name': 'cheese butter masala',
+      'name': 'butter masala',
       'detail': '',
       'image':
           'https://www.cubesnjuliennes.com/wp-content/uploads/2019/11/Paneer-Butter-Masala-Recipe-1.jpg',
@@ -262,7 +261,7 @@ class Global {
       'detail': '',
       'image':
           'https://www.yummytummyaarthi.com/wp-content/uploads/2014/09/1-27.jpg',
-      'price': 220,
+      'price': 250,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -296,7 +295,7 @@ class Global {
       'detail': '',
       'image':
           'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/03/matar-paneer.jpg',
-      'price': 150,
+      'price': 190,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -304,7 +303,7 @@ class Global {
       'name': 'choole bhature',
       'detail': '',
       'image': 'https://i.ytimg.com/vi/csfIOfMnRGg/maxresdefault.jpg',
-      'price': 150,
+      'price': 350,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -322,7 +321,7 @@ class Global {
       'detail': '',
       'image':
           'https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg',
-      'price': 150,
+      'price': 250,
       'rating': 4.4,
       'time': '22 minutes',
     },
@@ -343,7 +342,7 @@ class Global {
           'onions, black olives, bell peppers , tomatoes, mozzarella cheese',
       'image':
           'https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/a/v/p5595-15619599795d199e2b1ee35.jpg?tr=tr:n-xlarge',
-      'price': 195,
+      'price': 395,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -353,7 +352,7 @@ class Global {
           'tomato sauce, fresh mozzarella cheese, and fresh basil,olive oil and slices of fresh tomatoes',
       'image':
           'https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800',
-      'price': 195,
+      'price': 290,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -371,7 +370,7 @@ class Global {
       'detail': '',
       'image':
           'https://static.toiimg.com/thumb/59123476.cms?width=1200&height=900',
-      'price': 195,
+      'price': 225,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -380,7 +379,7 @@ class Global {
       'detail': '',
       'image':
           'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Waagmi_Soni/Gralic_Crust_Veggie_Pizza.jpg',
-      'price': 195,
+      'price': 300,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -389,16 +388,16 @@ class Global {
       'detail': '',
       'image':
           'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Pooja_Thakur/Tandoori_Paneer_Tikka_Skillet_Pizza.jpg',
-      'price': 195,
+      'price': 400,
       'rating': 4.9,
       'time': '22 minutes',
     },
     {
-      'name': 'Thin Crust Hawaiian',
+      'name': 'Thin Crust',
       'detail': '',
       'image':
           'https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2020-03/hawaiian-pizza.jpg?itok=a1-_QjRA',
-      'price': 195,
+      'price': 450,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -407,16 +406,16 @@ class Global {
       'detail': '',
       'image':
           'https://assets.epicurious.com/photos/560d995cf3a00aeb2f1cf542/1:1/w_2560%2Cc_limit/237341.jpg',
-      'price': 195,
+      'price': 420,
       'rating': 4.9,
       'time': '22 minutes',
     },
     {
-      'name': 'Broccoli and bacon Pizza',
+      'name': 'Broccoli and bacon',
       'detail': '',
       'image':
           'https://img.taste.com.au/mxSAUrze/taste/2016/11/broccoli-and-bacon-pizza-105800-1.jpeg',
-      'price': 195,
+      'price': 510,
       'rating': 4.9,
       'time': '22 minutes',
     },
@@ -436,7 +435,7 @@ class Global {
       'detail': '',
       'image':
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeVI4XzuI-lhVkea7rPkUxWoBXyXcfZKygZw&usqp=CAU',
-      'price': 170,
+      'price': 190,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -445,7 +444,7 @@ class Global {
       'detail': '',
       'image':
           'https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Pork-carnitas-b94893e.jpg?quality=90&resize=556,505',
-      'price': 170,
+      'price': 210,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -454,16 +453,16 @@ class Global {
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2019/01/Crispy-Cauliflower-Tacos-036.jpg',
-      'price': 170,
+      'price': 270,
       'rating': 4.2,
       'time': '22 minutes',
     },
     {
-      'name': 'Sweet Potato Black Bean',
+      'name': 'Sweet Potato',
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2021/09/Sweet-Potato-Enchiladas-010.jpg',
-      'price': 170,
+      'price': 100,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -472,16 +471,16 @@ class Global {
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2020/02/Simple-Guacamole-001.jpg',
-      'price': 170,
+      'price': 210,
       'rating': 4.2,
       'time': '22 minutes',
     },
     {
-      'name': 'Butternut Squash Chili',
+      'name': 'Butternut Squash',
       'detail': '',
       'image':
           'https://cookieandkate.com/images/2012/09/butternut-squash-chipotle-chili-recipe-0-1-550x822.jpg',
-      'price': 170,
+      'price': 200,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -490,7 +489,7 @@ class Global {
       'detail': '',
       'image':
           'https://recipesblob.oetker.in/assets/b72049329c8742b98daf790c9ef937bd/1272x764/loaded-nachos.jpg',
-      'price': 170,
+      'price': 210,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -499,16 +498,16 @@ class Global {
       'detail': '',
       'image':
           'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/800px-Burrito.JPG',
-      'price': 170,
+      'price': 230,
       'rating': 4.2,
       'time': '22 minutes',
     },
     {
-      'name': 'Vegetarian Tortilla Soup',
+      'name': 'Vegetarian Tortilla',
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2018/02/Chipotle-Black-Bean-Tortilla-Soup.jpg',
-      'price': 170,
+      'price': 300,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -517,7 +516,7 @@ class Global {
       'detail': '',
       'image':
           'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/03/Mexican-Rice-8.jpg',
-      'price': 170,
+      'price': 310,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -526,7 +525,7 @@ class Global {
       'detail': '',
       'image':
           'https://www.acouplecooks.com/wp-content/uploads/2020/02/Mexican-Salad-005.jpg',
-      'price': 170,
+      'price': 100,
       'rating': 4.2,
       'time': '22 minutes',
     },
@@ -557,7 +556,7 @@ class Global {
           'Roasted chipotle sauce ,onion , jalapenos ,salad mix ,Cheesy veg patty',
       'image':
           'https://menulist.menu/storage/media/dishes_main/14203821/nk97pp8xd8ijlcpexlmy.png',
-      'price': 50,
+      'price': 200,
       'rating': 4.8,
       'time': '22 minutes',
     },
@@ -567,17 +566,17 @@ class Global {
           'salsa, guacamole, chorizo, jalapeno peppers, cilantro,  melted cheese',
       'image':
           'https://s7d1.scene7.com/is/image/mcdonalds/mcRoyale-jdh-v1_b:1-4-product-tile-desktop',
-      'price': 50,
+      'price': 250,
       'rating': 4.8,
       'time': '22 minutes',
     },
     {
-      'name': 'Spicy Paneer Warp Burger',
+      'name': 'Spicy Paneer',
       'detail':
           'grilled paneer patty,onions, tomatoes, lettuce, jalapenos, hot sauce',
       'image':
           'https://mcdonaldsblog.in/wp-content/uploads/2016/06/mcspicy-paneer-1-1.jpg',
-      'price': 50,
+      'price': 350,
       'rating': 4.8,
       'time': '22 minutes',
     },
@@ -586,16 +585,16 @@ class Global {
       'detail': 'onion, cheese , salad mix , tomatoes , chutney',
       'image':
           'https://lh3.googleusercontent.com/LGPTqj2RLK2sxooWlZuF_Htb3X4SrtrWgEyfwfDxsRi14kdizn4Nzq7RbW9G3pcNMlRreUt0DAR-stA1uxGmfieLWsPDFPFU6nGZliuG',
-      'price': 50,
+      'price': 300,
       'rating': 4.8,
       'time': '22 minutes',
     },
     {
-      'name': 'Triple cheese veg',
+      'name': 'Triple cheese',
       'detail': 'double cheese , onion , tomatoes ,chutney ',
       'image':
           'https://cdn.urbanpiper.com/media/bizmedia/2023/04/28/awWX2h-AMTRCV-5276-1-5276.png',
-      'price': 50,
+      'price': 450,
       'rating': 4.8,
       'time': '22 minutes',
     },
@@ -620,10 +619,10 @@ class Global {
       'time': '22 minutes',
     },
     {
-      'name': 'Paneer Tikka Sizzler',
+      'name': 'Paneer Sizzler',
       'detail': '',
       'image': 'https://im.hunt.in/local/Gallery/3030913/l/3030913_b5e9f.jpg',
-      'price': 180,
+      'price': 280,
       'rating': 4.7,
       'time': '22 minutes',
     },
@@ -632,7 +631,7 @@ class Global {
       'detail': '',
       'image':
           'https://cexp.in/wp-content/uploads/2020/02/Veg-Chinese-Sizzler.jpg',
-      'price': 180,
+      'price': 200,
       'rating': 4.7,
       'time': '22 minutes',
     },
@@ -640,7 +639,7 @@ class Global {
       'name': 'mexican Sizzler',
       'detail': '',
       'image': 'https://i.ytimg.com/vi/yl3L9-qbTrY/maxresdefault.jpg',
-      'price': 180,
+      'price': 300,
       'rating': 4.7,
       'time': '22 minutes',
     },
@@ -649,7 +648,7 @@ class Global {
       'detail': '',
       'image':
           'https://5.imimg.com/data5/XR/TR/GLADMIN-9151659/lebanese-sizzler-500x500.jpg',
-      'price': 180,
+      'price': 420,
       'rating': 4.7,
       'time': '22 minutes',
     },
@@ -658,16 +657,16 @@ class Global {
       'detail': '',
       'image':
           'https://cdn.tarladalal.com/members/9306/images/lebanese_sizzler-7453.jpg',
-      'price': 180,
+      'price': 350,
       'rating': 4.7,
       'time': '22 minutes',
     },
     {
-      'name': 'Malpua rabari Sizzler',
+      'name': 'Malpua Sizzler',
       'detail': '',
       'image':
           'https://cdn.tarladalal.com/members/9306/big/big_malpua_rabdi_sizzler-7488.jpg',
-      'price': 180,
+      'price': 250,
       'rating': 4.7,
       'time': '22 minutes',
     },
@@ -675,7 +674,7 @@ class Global {
       'name': 'brownie Sizzler',
       'detail': '',
       'image': 'https://m.media-amazon.com/images/I/71HOWL-7NXL._SL1100_.jpg',
-      'price': 180,
+      'price': 420,
       'rating': 4.7,
       'time': '22 minutes',
     },

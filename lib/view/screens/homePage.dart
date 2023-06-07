@@ -1,11 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/view/screens/CartPage.dart';
-import 'package:food_app/view/screens/FavPage.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import '../../modal/Global.dart';
-import 'DetailPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

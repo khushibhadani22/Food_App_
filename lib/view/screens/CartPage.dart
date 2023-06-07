@@ -128,6 +128,20 @@ class CartPage extends StatelessWidget {
                         ),
                       ))
                   .toList(),
+              Container(
+                width: double.infinity,
+                height: 120,
+                color: Colors.grey.shade300,
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(15),
+                child: Row(
+                  children: [
+                    const Text("TotalAmount :"),
+                    const Spacer(),
+                    Text(cartController.totalAmount.toString()),
+                  ],
+                ),
+              ),
             ],
           )),
     );
