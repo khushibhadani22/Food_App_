@@ -6,6 +6,7 @@ import 'package:food_app/view/screens/FavPage.dart';
 import 'package:food_app/view/screens/SignInPage.dart';
 import 'package:food_app/view/screens/SignUpPage.dart';
 import 'package:food_app/view/screens/homePage.dart';
+import 'package:food_app/view/screens/main_page_view.dart';
 import 'package:food_app/view/screens/welcomPage.dart';
 import 'package:get/get.dart';
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/DetailPage', page: () => const DetailFood()),
         GetPage(name: '/favPage', page: () => const FAV()),
         GetPage(name: '/cartPage', page: () => const CartPage()),
+        GetPage(name: '/main', page: () => const Main()),
       ],
     );
   }
