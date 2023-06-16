@@ -1,93 +1,79 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/view/screens/CartPage.dart';
 import 'package:get/get.dart';
 import '../../modal/Global.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  int index = 0;
-
-  void onTapItem(int i) {
-    setState(() {
-      index = i;
-    });
-  }
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      bottomNavigationBar: SizedBox(
-        height: 60,
-        width: double.infinity,
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.shifting,
-          selectedItemColor: const Color(0xff05B025),
-          iconSize: 25,
-          selectedLabelStyle: const TextStyle(
-              color: Color(0xff05B025), fontWeight: FontWeight.bold),
-          onTap: onTapItem,
-          currentIndex: index,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home_outlined,
-                  color: Colors.black,
-                ),
-                activeIcon: Icon(
-                  Icons.home_outlined,
-                  color: Color(0xff05B025),
-                ),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.location_on_outlined,
-                  color: Colors.black,
-                ),
-                activeIcon: Icon(
-                  Icons.location_on_outlined,
-                  color: Color(0xff05B025),
-                ),
-                label: "Places"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.shopping_bag_outlined,
-                  color: Colors.black,
-                ),
-                activeIcon: Icon(
-                  Icons.shopping_bag_outlined,
-                  color: Color(0xff05B025),
-                ),
-                label: "Shopping"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite_border,
-                  color: Colors.black,
-                ),
-                activeIcon: Icon(
-                  Icons.favorite_border,
-                  color: Color(0xff05B025),
-                ),
-                label: "Favorite"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person_outline,
-                  color: Colors.black,
-                ),
-                activeIcon: Icon(
-                  Icons.person_outline,
-                  color: Color(0xff05B025),
-                ),
-                label: "Profile"),
-          ],
-        ),
-      ),
+      // bottomNavigationBar: SizedBox(
+      //   height: 60,
+      //   width: double.infinity,
+      //   child: BottomNavigationBar(
+      //     type: BottomNavigationBarType.shifting,
+      //     selectedItemColor: const Color(0xff05B025),
+      //     iconSize: 25,
+      //     selectedLabelStyle: const TextStyle(
+      //         color: Color(0xff05B025), fontWeight: FontWeight.bold),
+      //     onTap: onTapItem,
+      //     currentIndex: index,
+      //     items: const <BottomNavigationBarItem>[
+      //       BottomNavigationBarItem(
+      //           icon: Icon(
+      //             Icons.home_outlined,
+      //             color: Colors.black,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.home_outlined,
+      //             color: Color(0xff05B025),
+      //           ),
+      //           label: "Home"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(
+      //             Icons.location_on_outlined,
+      //             color: Colors.black,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.location_on_outlined,
+      //             color: Color(0xff05B025),
+      //           ),
+      //           label: "Places"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(
+      //             Icons.shopping_bag_outlined,
+      //             color: Colors.black,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.shopping_bag_outlined,
+      //             color: Color(0xff05B025),
+      //           ),
+      //           label: "Shopping"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(
+      //             Icons.favorite_border,
+      //             color: Colors.black,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.favorite_border,
+      //             color: Color(0xff05B025),
+      //           ),
+      //           label: "Favorite"),
+      //       BottomNavigationBarItem(
+      //           icon: Icon(
+      //             Icons.person_outline,
+      //             color: Colors.black,
+      //           ),
+      //           activeIcon: Icon(
+      //             Icons.person_outline,
+      //             color: Color(0xff05B025),
+      //           ),
+      //           label: "Profile"),
+      //     ],
+      //   ),
+      // ),
       body: Column(
         children: [
           Expanded(
@@ -257,9 +243,7 @@ class _HomePageState extends State<HomePage> {
                                     ],
                                   ),
                                   GestureDetector(
-                                    onTap: () {
-                                      Get.to(const CartPage());
-                                    },
+                                    onTap: () {},
                                     child: Container(
                                       decoration: const BoxDecoration(
                                           color: Color(0xff05B025),

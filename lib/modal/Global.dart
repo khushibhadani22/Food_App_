@@ -1,4 +1,10 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:food_app/modal/foodModal.dart';
+
+import '../view/screens/CartPage.dart';
+import '../view/screens/FavPage.dart';
+import '../view/screens/homePage.dart';
 
 class Global {
   static List category = [
@@ -688,4 +694,40 @@ class Global {
           rating: e['rating'],
           time: e['time']))
       .toList();
+
+  static List<Widget> pages = [
+    const HomePage(),
+    const CartPage(),
+    const FAV(),
+  ];
+  static List buttons = [
+    {
+      'icon': const Icon(Icons.home),
+      'key': '/',
+      'label': 'Home',
+      'tap': true,
+      'index': 0,
+    },
+    {
+      'icon': const Icon(Icons.shopping_cart),
+      'key': '/cartPage',
+      'label': 'Shopping',
+      'tap': false,
+      'index': 1,
+    },
+    {
+      'icon': const Icon(CupertinoIcons.heart_fill),
+      'key': '/favPage',
+      'label': 'Favorite',
+      'tap': false,
+      'index': 2,
+    },
+    {
+      'icon': const Icon(Icons.person),
+      'key': '/',
+      'label': 'Person',
+      'tap': false,
+      'index': 3,
+    }
+  ];
 }
